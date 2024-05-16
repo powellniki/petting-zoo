@@ -2,11 +2,6 @@ from slithering import Copperhead, Gecko, Lizard, RatSnake, Salamander
 from swimming import Frog, Goldfish, Goose, Mallard, Turtle
 from walking import Donkey, Goat, Horse, Llama, Pig
 
-frank = Llama("Frank the Tank", "llama", "petting area")
-tina = Goat("Tina", "goat", "petting area")
-nancy = Pig("Nancy", "pig", "petting area")
-alfred = Donkey("Alfred", "donkey", "petting area")
-susan = Horse("Susan", "horse", "petting area")
 
 spot = Copperhead("Spot", "copperhead", "tank")
 charlie = RatSnake("Charlie", "rat snake", "tank")
@@ -20,3 +15,11 @@ jonathan = Turtle("Jonathan", "turtle", "pond")
 sniper = Goose("Sniper", "goose", "pond")
 legs = Frog("Legs", "frog", "pond")
 
+frank = Llama("Frank the Tank", "llama", "petting area", "midday")
+tina = Goat("Tina", "goat", "petting area", "morning")
+nancy = Pig("Nancy", "pig", "petting area", "afternoon")
+alfred = Donkey("Alfred", "donkey", "petting area", "morning")
+susan = Horse("Susan", "horse", "petting area", "afternoon")
+
+
+print(f"{frank.name} the {frank.species} is available to pet during the {frank.shift} shift")
